@@ -1,8 +1,5 @@
 ---
-layout: post
 title: About
-permalink: /about/
-
 ---
 
 CyberSec/PenetrationTesting/BugHunter .
