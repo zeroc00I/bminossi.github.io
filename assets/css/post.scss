@@ -27,25 +27,16 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   border-color: var(--btn-border-color);
 }
 
-.post-content {
-  > ol, > ul, > dl {
-    padding-left: 2rem;
-    li+li {
-      margin-top: 0.3rem;
-    }
-  }
-  li {
-    > ol, > ul, > dl { // sub list
-      padding-left: 2rem;
-    }
-    > p {
-      margin: 1rem 0 0.8rem;
-    }
-  }
-  .post-preview-img {
-    margin-top: 0;
-    margin-bottom: 2.5rem;
-    @include align-center;
+.post {
+  img {
+    max-width: 100%;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
@@ -342,10 +333,19 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 
 /* Hide SideBar and TOC */
 @media all and (max-width: 830px) {
+  .post img {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
   .post-navigation {
     padding-left: 0;
     padding-right: 0;
     margin-left: -.5rem;
     margin-right: -.5rem;
   }
+
 }
