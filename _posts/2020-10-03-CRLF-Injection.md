@@ -112,3 +112,6 @@ Reflected XSS
 ### CRLF Injection Playbook
 
 [`https://medium.com/cyberverse/crlf-injection-playbook-472c67f1cb46`](https://medium.com/cyberverse/crlf-injection-playbook-472c67f1cb46)
+
+### Forcing Firefox to Execute XSS Payloads during 302 Redirects
+[`https://www.gremwell.com/firefox-xss-302`](Forcing Firefox to Execute XSS Payloads during 302 Redirects)
