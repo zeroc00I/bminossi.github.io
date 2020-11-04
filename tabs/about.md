@@ -15,4 +15,4 @@ I want learn always ,I love the hack and CTF
     Facebook : 0xelkomy
     Hackerone : 0xelkomy
 
-<script src="https://tryhackme.com/badge/9124"></script>
+<img src="https://tryhackme-badges.s3.amazonaws.com/xelkomy.png" alt="TryHackMe">
