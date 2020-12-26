@@ -27,12 +27,12 @@ math: true
 	xargs -I@ -P10 sh -c 'gospider -a -s "https://@" -d 2 | grep -Eo "(http|https)://[^/\"]+" | anew httponly'
 
 # Extract only JS using gospider (required anew instalation)
- This command bellow check which host have https port is enable and use results to to gospider, as the command above
+ This command bellow check which host have https port enabled and uses results to gospider input
 
 	xargs -P 500 -a hostswordlist -I@ sh -c 'nc -w1 -z -v @ 443 2>/dev/null && echo @' | \
 	xargs -I@ -P10 sh -c 'gospider -a -s "https://@" -d 2 | grep -Eo "(http|https)://[^/\"].*.js+" | sed "s#\] \- #\n#g" | anew jsonly'
 
 # Mass portscanner:
  Best port checker command at scale
- 
+
 	docker run ilyaglow/masscan -Pn --ports 0-65535 --rate 10000 CIDRHERE
