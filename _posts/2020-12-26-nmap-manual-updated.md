@@ -7,7 +7,7 @@ math: true
 ---
 
 #  This script create nse files, directly from their svn repo :)
- You can increse parallel download (currently -P20)
+ You can increase parallel download files if you want (currently -P20)
 	
 	curl -sf 'https://svn.nmap.org/nmap/scripts/' | \
 	tr '<>"' '\n' | awk '/.nse/{print "https://svn.nmap.org/nmap/scripts/"$1}' | \
