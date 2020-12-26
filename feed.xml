@@ -21,7 +21,7 @@ layout: compress
   <link href="{{ site.url }}" rel="alternate" type="text/html" />
   <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
   <rights> © {{ 'now' | date: '%Y' }} {{ site.author }} </rights>
-  <icon>{{ site.baseurl }}/assets/img/favicons/favicon.ico</icon>
+  <icon>{{ site.baseurl }}/assets/img/favicons/favicon2.ico</icon>
   <logo>{{ site.baseurl }}/assets/img/favicons/favicon-96x96.png</logo>
 
 {% for post in site.posts limit: 5 %}
