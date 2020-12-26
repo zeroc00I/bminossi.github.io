@@ -32,7 +32,7 @@ math: true
 	xargs -P 500 -a hostswordlist -I@ sh -c 'nc -w1 -z -v @ 443 2>/dev/null && echo @' | \
 	xargs -I@ -P10 sh -c 'gospider -a -s "https://@" -d 2 | grep -Eo "(http|https)://[^/\"].*.js+" | sed "s#\] \- #\n#g" | anew jsonly'
 
-# Mass portscanner:
+# Mass portscanner
  Best port checker command at scale
 
 	docker run ilyaglow/masscan -Pn --ports 0-65535 --rate 10000 CIDRHERE
