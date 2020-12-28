@@ -11,10 +11,10 @@ math: true
  ![Bite Size Bash Book](/assets/img/bitesizebash.jpg)
 
  Go to her website:
- [https://wizardzines.com/] (https://wizardzines.com/)
+ [https://wizardzines.com/](https://wizardzines.com/)
  
  Or directly from book sale on: 
- [https://gumroad.com/l/bite-size-linux] (https://gumroad.com/l/bite-size-linux)
+ [https://gumroad.com/l/bite-size-linux](https://gumroad.com/l/bite-size-linux)
 
 #  Command Substitution vs Pipeline
  (If you dont undestand the concepts between both, check out the examples bellow)
@@ -44,7 +44,7 @@ math: true
 	DISTRIB_ID=Ubuntu DISTRIB_RELEASE=19.10 DISTRIB_CODENAME=eoan DISTRIB_DESCRIPTION="Ubuntu 19.10"
 
  Now, we can replace some patters from our output with another string, for example Kali
- 
+
 	echo ${soOutput//Ubuntu/Kali}
 	DISTRIB_ID=Kali DISTRIB_RELEASE=19.10 DISTRIB_CODENAME=eoan DISTRIB_DESCRIPTION="Kali 19.10"
 
@@ -79,7 +79,7 @@ math: true
 
 # Trap - Calling a command when some intended event ocurr
 
-### Print currently day when Ctrl + C is pressed
+### Printing currently day when Ctrl + C is pressed
 
 	trap '$(date +%d)' EXIT
 
