@@ -10,9 +10,11 @@ math: true
 
  ![Bite Size Bash Book](/assets/img/bitesizebash.jpg)
 
- Go to her website: https://wizardzines.com/
+ Go to her website:
+ https://wizardzines.com/
  
- Or directly from book sale on: https://gumroad.com/l/bite-size-linux
+ Or directly from book sale on: 
+ https://gumroad.com/l/bite-size-linux
 
 #  Command Substitution vs Pipeline
  If you dont undestand the concepts between both, check out the examples bellow
@@ -39,7 +41,6 @@ math: true
 
 	soOutput=`cat /etc/lsb-release`
 
-	soOutput=`cat /etc/lsb-release`
 	DISTRIB_ID=Ubuntu DISTRIB_RELEASE=19.10 DISTRIB_CODENAME=eoan DISTRIB_DESCRIPTION="Ubuntu 19.10"
 
 	echo ${soOutput//Ubuntu/Kali}
@@ -67,10 +68,14 @@ math: true
  Output:
 	bash: nothingwasset: this variable doesnt exist
 
-# Trap
-
-## Call a command when some intended event ocurr
+# Trap - Calling a command when some intended event ocurr
 
 ### Print currently day when Ctrl + C is pressed
 
 	trap '$(date +%d)' EXIT
+
+# Set -euo and erros in bash
+
+## set -e
+
+###
