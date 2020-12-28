@@ -19,11 +19,11 @@ math: true
 #  Command Substitution vs Pipeline
  (If you dont undestand the concepts between both, check out the examples bellow)
 
-## Pipeline seems like
+### Pipeline seems like
 
 	ls | head
 
-## Otherwise Command Substitution
+### Otherwise Command Substitution
 
 	head <(ls)
 
@@ -59,7 +59,7 @@ math: true
 	echo ${#soOutput}
 	96
 
-## Checking unset/null variable
+### Checking unset/null variable
 
 	idunno="echo hi"
 
@@ -69,7 +69,7 @@ math: true
 
 	hi
 
-## Taking better control of exceptions
+### Taking better control of exceptions
 
 	${nothingwasset:?this variable doesnt exist}
 
@@ -85,11 +85,11 @@ math: true
 
 # Set -euo and erros in bash
 
-## Stops the script on erros
+### Stops the script on erros
 
 	set -e
 
-## Stops on unset variables
+### Stops on unset variables
 
 	set -u
 
