@@ -35,10 +35,16 @@ math: true
 
 ### Similar to sed functionality, we can do the following replacing patterns to another string
 
+ Declaring out variable
+
 	soOutput=`cat /etc/lsb-release`
+
+ Will return
 
 	DISTRIB_ID=Ubuntu DISTRIB_RELEASE=19.10 DISTRIB_CODENAME=eoan DISTRIB_DESCRIPTION="Ubuntu 19.10"
 
+ Now, we can replace some patters from our output with another string, for example Kali
+ 
 	echo ${soOutput//Ubuntu/Kali}
 	DISTRIB_ID=Kali DISTRIB_RELEASE=19.10 DISTRIB_CODENAME=eoan DISTRIB_DESCRIPTION="Kali 19.10"
 
@@ -47,11 +53,13 @@ math: true
 
 	echo $soOutput | wc -c
 	96
+ 
+ is similar to
 
 	echo ${#soOutput}
 	96
 
-## Check unset/null variable
+## Checking unset/null variable
 
 	idunno="echo hi"
 
