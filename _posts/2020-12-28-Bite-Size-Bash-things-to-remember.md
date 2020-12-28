@@ -11,10 +11,10 @@ math: true
  ![Bite Size Bash Book](/assets/img/bitesizebash.jpg)
 
  Go to her website:
- https://wizardzines.com/
+ [https://wizardzines.com/] (https://wizardzines.com/)
  
  Or directly from book sale on: 
- https://gumroad.com/l/bite-size-linux
+ [https://gumroad.com/l/bite-size-linux] (https://gumroad.com/l/bite-size-linux)
 
 #  Command Substitution vs Pipeline
  If you dont undestand the concepts between both, check out the examples bellow
