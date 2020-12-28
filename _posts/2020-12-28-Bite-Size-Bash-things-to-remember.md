@@ -7,7 +7,7 @@ math: true
 ---
 
 #  Command Substitution vs Pipeline
- If you dont undestand de concepts between both
+ If you dont undestand the concepts between both
 
  ## Pipeline seems like
 
