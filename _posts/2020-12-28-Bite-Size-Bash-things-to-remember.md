@@ -61,7 +61,7 @@ math: true
 
 	hi
 
-## Take better control of exceptions
+## Taking better control of exceptions
 
 	${nothingwasset:?this variable doesnt exist}
 
