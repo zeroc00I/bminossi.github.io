@@ -17,7 +17,7 @@ math: true
 
 	head <(ls)
 
- The benefits to use command substituition intead pipeline is that you have more control of the output, just like named pipelines using MKFIFO.
+ The benefits of using command substituition intead pipeline is that you have more control of the output, just like named pipelines using MKFIFO.
 
 	wget -O - http://example.com/dvd.iso | tee >(sha1sum > dvd.sha1) >(md5sum > dvd.md5) > dvd.iso
 
