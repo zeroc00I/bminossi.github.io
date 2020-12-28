@@ -8,7 +8,7 @@ math: true
 
  For those that have not already download Bite Size Bash book from Julia, i would like to suggest you do it in order to improve your knowledge in Unix Shells =)
 
- ![Bite Size Bash Book](/assets/img/bitesizebash.jpg =74%)
+ ![Bite Size Bash Book](/assets/img/bitesizebash.jpg)
 
  Go to her website: https://wizardzines.com/
  
@@ -29,3 +29,48 @@ math: true
 
 	wget -O - http://example.com/dvd.iso | tee >(sha1sum > dvd.sha1) >(md5sum > dvd.md5) > dvd.iso
 
+# Parameter expansion ${}
+
+## There are some very usefull tricks
+
+### Similar to sed functionality, we can do the follow
+
+ Replacing patterns to another string
+
+	soOutput=`cat /etc/lsb-release`
+
+	soOutput=`cat /etc/lsb-release`
+	DISTRIB_ID=Ubuntu DISTRIB_RELEASE=19.10 DISTRIB_CODENAME=eoan DISTRIB_DESCRIPTION="Ubuntu 19.10"
+
+	echo ${soOutput//Ubuntu/Kali}
+	DISTRIB_ID=Kali DISTRIB_RELEASE=19.10 DISTRIB_CODENAME=eoan DISTRIB_DESCRIPTION="Kali 19.10"
+
+
+### Similar to wc -c
+
+	echo $soOutput | wc -c
+	96
+
+	echo ${#soOutput}
+	96
+
+## Check unset/null variable
+
+	idunno="echo hi"
+
+	${thisvariabledoesntexist:-$idunno}
+ Output: 
+	hi
+
+## Take better control of exceptions
+	${nothingwasset:?this variable doesnt exist}
+ Output:
+	bash: nothingwasset: this variable doesnt exist
+
+# Trap
+
+## Call a command when some intended event ocurr
+
+### Print currently day when Ctrl + C is pressed
+
+	trap '$(date +%d)' EXIT
