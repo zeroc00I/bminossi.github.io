@@ -17,7 +17,7 @@ math: true
  [https://gumroad.com/l/bite-size-linux] (https://gumroad.com/l/bite-size-linux)
 
 #  Command Substitution vs Pipeline
- If you dont undestand the concepts between both, check out the examples bellow
+ (If you dont undestand the concepts between both, check out the examples bellow)
 
 ## Pipeline seems like
 
@@ -31,13 +31,9 @@ math: true
 
 	wget -O - http://example.com/dvd.iso | tee >(sha1sum > dvd.sha1) >(md5sum > dvd.md5) > dvd.iso
 
-# Parameter expansion ${}
+# Parameter expansion ${} - There are some very usefull tricks
 
-## There are some very usefull tricks
-
-### Similar to sed functionality, we can do the follow
-
- Replacing patterns to another string
+### Similar to sed functionality, we can do the following replacing patterns to another string
 
 	soOutput=`cat /etc/lsb-release`
 
