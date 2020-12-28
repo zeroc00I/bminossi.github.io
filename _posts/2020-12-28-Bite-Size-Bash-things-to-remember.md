@@ -8,7 +8,7 @@ math: true
 
  For those that have not already download Bite Size Bash book from Julia, i would like to suggest you do it in order to improve your knowledge in Unix Shells =)
 
- ![Bite Size Bash Book](/assets/img/bitesizebash.jpg)
+ ![Bite Size Bash Book](/assets/img/bitesizebash.jpg =74%)
 
  Go to her website: https://wizardzines.com/
  
