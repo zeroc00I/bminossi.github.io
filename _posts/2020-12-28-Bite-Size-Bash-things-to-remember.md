@@ -58,7 +58,7 @@ math: true
 	${thisvariabledoesntexist:-$idunno}
 
  Output: 
- 
+
 	hi
 
 ## Take better control of exceptions
@@ -89,4 +89,6 @@ math: true
 
 	set -o pipefail
 
-###
+### Bonus: Debugging every line with all variables expanded
+
+	set -x or bash -x script.sh
