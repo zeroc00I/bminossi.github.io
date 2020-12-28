@@ -6,18 +6,18 @@ tags: ["bash","sh","shellscript"]
 math: true
 ---
 
- For those that have not already purchased Bite Size Bash book from Julia, i would like to suggest you do it in order to improve your knowledge in Unix Shells =)
+ For those that have not already purchased Bite Size Bash book from Julia, I would like to suggest you do it in order to improve your knowledge in Unix Shells =)
 
  ![Bite Size Bash Book](/assets/img/bitesizebash.jpg)
 
  Go to her website:
- [https://wizardzines.com/] ([https://wizardzines.com/])
+ [https://wizardzines.com/](https://wizardzines.com/)
  
  Or directly from book sale on: 
- [https://gumroad.com/l/bite-size-linux]([https://gumroad.com/l/bite-size-linux])
+ [https://gumroad.com/l/bite-size-linux](https://gumroad.com/l/bite-size-linux)
 
 #  Command Substitution vs Pipeline
- (If you dont undestand the concepts between both, check out the examples bellow)
+ (If you don't understand the concepts between both, check out the examples bellow)
 
 ### Pipeline seems like
 
@@ -27,7 +27,7 @@ math: true
 
 	head <(ls)
 
- The benefits of using command substituition intead pipeline is that you have more control of the output, just like named pipelines using MKFIFO.
+ The benefits of using command substitution instead pipeline are that you have more control of the output, just like named pipelines using MKFIFO.
 
 	wget -O - http://example.com/dvd.iso | tee >(sha1sum > dvd.sha1) >(md5sum > dvd.md5) > dvd.iso
 
@@ -43,7 +43,7 @@ math: true
 
 	DISTRIB_ID=Ubuntu DISTRIB_RELEASE=19.10 DISTRIB_CODENAME=eoan DISTRIB_DESCRIPTION="Ubuntu 19.10"
 
- Now, we can replace some patters from our output with another string, for example Kali
+ Now, we can replace some patters from our output with another string, for example, Kali
 
 	echo ${soOutput//Ubuntu/Kali}
 	DISTRIB_ID=Kali DISTRIB_RELEASE=19.10 DISTRIB_CODENAME=eoan DISTRIB_DESCRIPTION="Kali 19.10"
