@@ -56,12 +56,17 @@ math: true
 	idunno="echo hi"
 
 	${thisvariabledoesntexist:-$idunno}
+
  Output: 
+ 
 	hi
 
 ## Take better control of exceptions
+
 	${nothingwasset:?this variable doesnt exist}
+
  Output:
+
 	bash: nothingwasset: this variable doesnt exist
 
 # Trap - Calling a command when some intended event ocurr
@@ -73,10 +78,15 @@ math: true
 # Set -euo and erros in bash
 
 ## Stops the script on erros
+
 	set -e
+
 ## Stops on unset variables
+
 	set -u
+
 ### Stops the script when any command fail
+
 	set -o pipefail
 
 ###
