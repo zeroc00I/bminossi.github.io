@@ -6,6 +6,13 @@ tags: ["bash","sh","shellscript"]
 math: true
 ---
 
+ For those that have not already download Bite Size Bash book from Julia, i would like to suggest you do it in order to improve your knowledge in Unix Shells =)
+
+ ![Bite Size Bash Book](/assets/bitesizebash.jpg)
+
+ Go to her website: https://wizardzines.com/
+ Or directly from book sale on: https://gumroad.com/l/bite-size-linux
+
 #  Command Substitution vs Pipeline
  If you dont undestand the concepts between both, check out the examples bellow
 
