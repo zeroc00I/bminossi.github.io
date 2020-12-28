@@ -72,6 +72,11 @@ math: true
 
 # Set -euo and erros in bash
 
-## set -e
+## Stops the script on erros
+	set -e
+## Stops on unset variables
+	set -u
+### Stops the script when any command fail
+	set -o pipefail
 
 ###
